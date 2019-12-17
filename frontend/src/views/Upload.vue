@@ -59,7 +59,7 @@ export default {
         // item.file = this.$refs.files;
         formData.append("file", item.file);
       });
-      // console.log(formData)
+      console.log(formData)
       const response = await axios.post("upload", formData);
       console.log(response);
 

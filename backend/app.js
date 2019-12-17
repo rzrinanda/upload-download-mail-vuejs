@@ -12,6 +12,9 @@ var app = express();
 var cors = require('cors');
 app.use(cors());
 
+// import axios from 'axios';
+// axios.defaults.baseURL = process.env.BASE_URL_EXPRESS;
+
 const fileUpload = require('express-fileupload');
 app.use(fileUpload({
   useTempFiles : true,
